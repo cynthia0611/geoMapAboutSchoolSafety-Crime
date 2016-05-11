@@ -7,4 +7,4 @@ File for crime happend around Syracuse areas was created by using live database 
 
 Related files can be downloaded with .csv file.
 
-![alt text](
+![alt text](https://github.com/cynthia0611/geoMapAboutSchoolSafety-Crime/blob/master/mapV1.png)
