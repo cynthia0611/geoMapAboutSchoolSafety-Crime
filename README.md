@@ -10,7 +10,7 @@ File for crime happend around Syracuse areas was created by using live database 
 ![alt text](https://github.com/cynthia0611/geoMapAboutSchoolSafety-Crime/blob/master/Pics/crimeVsChronic.png)
 
 ####crimeVsReferral
-#####crime density map over with chronic 2015-16 school year YTD referral count for each school
+#####crime density map over with  2015-16 school year YTD referral count for each school
 ![alt text](https://github.com/cynthia0611/geoMapAboutSchoolSafety-Crime/blob/master/Pics/crimeVsReferral.png)
 
 ####povertyVsChronic
@@ -18,5 +18,5 @@ File for crime happend around Syracuse areas was created by using live database 
 ![alt text](https://github.com/cynthia0611/geoMapAboutSchoolSafety-Crime/blob/master/Pics/povertyVsChronic.png)
 
 ####povertyVsReferral
-#####poverty density map over with chronic 2015-16 school year YTD referral count for each school
+#####poverty density map over with 2015-16 school year YTD referral count for each school
 ![alt text](https://github.com/cynthia0611/geoMapAboutSchoolSafety-Crime/blob/master/Pics/povertyVsReferral.png)
