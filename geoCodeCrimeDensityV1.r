@@ -7,14 +7,14 @@ library(maps)
 library(plyr)
 
 
-schoolCoor <- read.csv("Z:/Yueming/YSun/GeoCodeSchools/geoCodeSchools.csv")
+schoolCoor <- read.csv("https://raw.githubusercontent.com/cynthia0611/geoMapAboutSchoolSafety-Crime/master/geoCodeSchools.csv")
 
 # class(schoolCoor)
 # head(schoolCoor,2)
 # names(schoolCoor)
 
 
-crimePoint <- read.csv("Z:/Yueming/YSun/GeoCodeSchools/syracuseCrimeSep82015-May62016.csv")
+crimePoint <- read.csv("https://raw.githubusercontent.com/cynthia0611/geoMapAboutSchoolSafety-Crime/master/syracuseCrimeSep82015-May62016.csv")
 
 # http://www.syracuse.com/crime/police-reports/
 
