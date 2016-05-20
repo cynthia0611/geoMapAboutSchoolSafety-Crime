@@ -5,6 +5,7 @@ File for crime happend around Syracuse areas was created by using live database 
 
 File for census track shapefile and poverty census data were downloaded from United States Census Bureau webset
 https://www.census.gov/geo/maps-data/data/tiger-line.html
+
 http://factfinder.census.gov/faces/nav/jsf/pages/index.xhtml
 
 ####crimeVsChronic
