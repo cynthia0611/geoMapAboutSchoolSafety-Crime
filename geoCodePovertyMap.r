@@ -9,6 +9,8 @@
 
 library( maptools )
 
+# for rerun the code, please download the zip folder of "tl_2015_36_tract"
+# unzip in your local computer and locate direcotry to that folder
 setwd("Z:/Yueming/YSun/GeoCodeSchools/tl_2015_36_tract")
 
 ny <- readShapePoly(
@@ -33,7 +35,7 @@ syr <- ny[ ny$COUNTYFP %in% these, ]
 shp.id <- as.character(syr$GEOID)
 
 # load census data for poverty topic
-census.dat <- read.csv( "Z:/Yueming/YSun/GeoCodeSchools/aff_download ny/ACS_14_5YR_S1701_with_ann.csv", 
+census.dat <- read.csv( "https://raw.githubusercontent.com/cynthia0611/geoMapAboutSchoolSafety-Crime/master/ACS_14_5YR_S1701_with_ann.csv", 
                         colClasses="character" )
 census.dat <- census.dat[ -1 , ] # get rid of annotations
 geo.id <- census.dat$GEO.id2
@@ -51,7 +53,7 @@ pov.dots <- as.data.frame( pov.dots )
 
 
 # get school data in
-schoolCoor <- read.csv("Z:/Yueming/YSun/GeoCodeSchools/geoCodeSchools.csv")
+schoolCoor <- read.csv("https://raw.githubusercontent.com/cynthia0611/geoMapAboutSchoolSafety-Crime/master/geoCodeSchools.csv")
 
 
 library(ggmap)
