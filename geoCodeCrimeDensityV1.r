@@ -6,13 +6,11 @@ library(ggplot2)
 library(maps)
 library(plyr)
 
-
 schoolCoor <- read.csv("https://raw.githubusercontent.com/cynthia0611/geoMapAboutSchoolSafety-Crime/master/geoCodeSchools.csv")
 
 # class(schoolCoor)
 # head(schoolCoor,2)
 # names(schoolCoor)
-
 
 crimePoint <- read.csv("https://raw.githubusercontent.com/cynthia0611/geoMapAboutSchoolSafety-Crime/master/syracuseCrimeSep82015-May62016.csv")
 
@@ -43,7 +41,6 @@ crimePointLocation <- geocode(crimeAddress)
 # 
 # schoolCoor <- cbind( schoolCoor, crime.count.1mile )
 
-
 # head(schoolCoor)
 
 # http://www.csgnetwork.com/gpsdistcalc.html
@@ -63,9 +60,7 @@ crimePointLocation <- geocode(crimeAddress)
 # 
 # schoolCoor <- cbind( schoolCoor, crime.count.2mile )
 # 
-# 
 # head(schoolCoor)
-
 
 # crime.count.0.5mile <- NULL
 # 
@@ -82,9 +77,7 @@ crimePointLocation <- geocode(crimeAddress)
 # 
 # schoolCoor <- cbind( schoolCoor, crime.count.0.5mile )
 
-
 # head(schoolCoor)
-
 
 crime.count.3mile <- NULL
 
@@ -101,9 +94,7 @@ for( i in 1:nrow(schoolCoor) )
 
 schoolCoor <- cbind( schoolCoor, crime.count.3mile )
 
-
 # head(schoolCoor)
-
 
 # crime.count.2.5mile <- NULL
 # 
@@ -121,7 +112,6 @@ schoolCoor <- cbind( schoolCoor, crime.count.3mile )
 # schoolCoor <- cbind( schoolCoor, crime.count.2.5mile )
 # 
 # head(schoolCoor)
-
 
 syracuse <-ggmap(get_map (location = "syracuse, ny", 
                # source="google",
@@ -160,7 +150,6 @@ map31 <- map21 +  geom_point(data=schoolCoor,
                             # size=3, 
                             col="steel blue",alpha=0.8)+ scale_size_area(max_size = 10)
 
-
 # https://cran.r-project.org/web/packages/ggrepel/vignettes/ggrepel.html
 
 # add label
@@ -169,13 +158,5 @@ map4 <- map31+geom_text_repel(data=schoolCoor,
                                                  label = schools),size=4.3
                               ,color="#252525",fontface="bold"
                              ) + theme_classic(base_size = 10) 
-
 map4
-
-
-
-
-
-
-
 
